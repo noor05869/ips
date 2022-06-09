@@ -90,24 +90,29 @@ const Submission = () => {
     ],
   };
 
-   const PIB =  {
-    headings: ["Instrument","Bidding Deadline","Auction Date", "Settlement Date"],
+  const PIB = {
+    headings: [
+      "Instrument",
+      "Bidding Deadline",
+      "Auction Date",
+      "Settlement Date",
+    ],
     tBody: [
       {
         id: 1,
-        items: ["PIB","14 Jun 2022 | 4:00 PM","18-May-22", "19-May-22"],
+        items: ["PIB", "14 Jun 2022 | 4:00 PM", "18-May-22", "19-May-22"],
       },
       {
         id: 2,
-        items: ["B","16 Jun 2022","4-Jun-22", "2-Jun-22"],
+        items: ["B", "16 Jun 2022", "4-Jun-22", "2-Jun-22"],
       },
       {
         id: 3,
-        items: ["29 Jun 2022","23 Jun 2022","19-Jun-22", "16-Jun-22"],
+        items: ["29 Jun 2022", "23 Jun 2022", "19-Jun-22", "16-Jun-22"],
       },
       {
         id: 4,
-        items: ["13 Jul 2022","14 Jul 2022","19-Jun-22", "30-Jun-22"],
+        items: ["13 Jul 2022", "14 Jul 2022", "19-Jun-22", "30-Jun-22"],
       },
       // {
       //   id: 5,
@@ -163,27 +168,32 @@ const Submission = () => {
     ],
   };
   const Tbill = {
-    headings: ["Instrument","Bidding Deadline","Auction Date", "Settlement Date"],
+    headings: [
+      "Instrument",
+      "Bidding Deadline",
+      "Auction Date",
+      "Settlement Date",
+    ],
     tBody: [
       {
         id: 1,
-        items: ["T-BILL","14 Jun 2022 | 3:00 PM","18-May-22", "19-May-22"],
+        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "18-May-22", "19-May-22"],
       },
       {
         id: 2,
-        items: ["B","16 Jun 2022","1-Jun-22", "2-Jun-22"],
+        items: ["B", "16 Jun 2022", "1-Jun-22", "2-Jun-22"],
       },
       {
         id: 3,
-        items: ["29 Jun 2022","30 Jun 2022","15-Jun-22", "16-Jun-22"],
+        items: ["29 Jun 2022", "30 Jun 2022", "15-Jun-22", "16-Jun-22"],
       },
       {
         id: 4,
-        items: ["13 Jul 2022","14 Jul 2022","29-Jun-22", "30-Jun-22"],
+        items: ["13 Jul 2022", "14 Jul 2022", "29-Jun-22", "30-Jun-22"],
       },
       {
         id: 5,
-        items: ["27 Jul 2022","28 Jul 2022","13-Jul-22", "14-Jul-22"],
+        items: ["27 Jul 2022", "28 Jul 2022", "13-Jul-22", "14-Jul-22"],
       },
       // {
       //   id: 6,
@@ -225,14 +235,14 @@ const Submission = () => {
 
           <div className="row   calendardiv ">
             <div className="col-lg-6  col-sm-6 col-md-6">
-              <h2 className="my-3 ps-5">Calendar</h2>
+              <h2 className="my-3">Calendar</h2>
               <div className="calendarTab">
                 <div className=" tabs_div">
                   <button
                     onClick={() => handleActiveTAb("PIB")}
                     className={`btn btn-primary my-2 ${
                       activeTab === "PIB" ? activeclass : "tabsbtn"
-                    } my-3 mx-3 `}
+                    } my-3 me-3 `}
                   >
                     PIB
                   </button>
@@ -240,21 +250,24 @@ const Submission = () => {
                     onClick={() => handleActiveTAb("Tbill")}
                     className={`btn btn-primary  my-2  ${
                       activeTab === "Tbill" ? activeclass : "tabsbtn"
-                    }  `}
+                    }  me-3 `}
                   >
                     T-BILL
                   </button>
                   <button
                     onClick={() => handleActiveTAb("Tbill")}
-                    className={`btn btn-primary w-50   ${
+                    className={`btn btn-primary    ${
                       activeTab === "annual" ? activeclass : "tabsbtn"
-                    }  my-2  mx-3 `}
+                    }  my-2  me-3 sukook `}
                   >
                     SUKUK (Coming Soon)
                   </button>
                 </div>
                 <div className=" tabs_div">
-                  <p className="ms-3 my-3 fw-600 acntp"><a  href="" >Click Here</a> Click Here to review last auction results</p>
+                  <p className="ms-3 my-3 fw-600 acntp">
+                    <a href="">Click Here</a> Click Here to review last auction
+                    results
+                  </p>
                   {/* <button
                     onClick={() => handleActiveTAb("annual")}
                     className={`btn btn-primary   ${
@@ -295,11 +308,16 @@ const Submission = () => {
                   {activeTable?.tBody?.map((item) => (
                     <tr className="second_row">
                       {item.items?.map((data) => (
-                        <td key={item}>{data}</td> 
+                        <td key={item}>{data}</td>
                       ))}
-                       <td>
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
                     </tr>
                   ))}
                 </tbody>
