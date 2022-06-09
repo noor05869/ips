@@ -104,15 +104,15 @@ const Submission = () => {
       },
       {
         id: 2,
-        items: ["B", "16 Jun 2022", "4-Jun-22", "2-Jun-22"],
+        items: ["PIB", "14 Jun 2022 | 4:00 PM", "4-Jun-22", "2-Jun-22"],
       },
       {
         id: 3,
-        items: ["29 Jun 2022", "23 Jun 2022", "19-Jun-22", "16-Jun-22"],
+        items: ["PIB", "14 Jun 2022 | 4:00 PM", "19-Jun-22", "16-Jun-22"],
       },
       {
         id: 4,
-        items: ["13 Jul 2022", "14 Jul 2022", "19-Jun-22", "30-Jun-22"],
+        items: ["PIB", "14 Jun 2022 | 4:00 PM", "19-Jun-22", "30-Jun-22"],
       },
       // {
       //   id: 5,
@@ -181,19 +181,19 @@ const Submission = () => {
       },
       {
         id: 2,
-        items: ["B", "16 Jun 2022", "1-Jun-22", "2-Jun-22"],
+        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "1-Jun-22", "2-Jun-22"],
       },
       {
         id: 3,
-        items: ["29 Jun 2022", "30 Jun 2022", "15-Jun-22", "16-Jun-22"],
+        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "15-Jun-22", "16-Jun-22"],
       },
       {
         id: 4,
-        items: ["13 Jul 2022", "14 Jul 2022", "29-Jun-22", "30-Jun-22"],
+        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "29-Jun-22", "30-Jun-22"],
       },
       {
         id: 5,
-        items: ["27 Jul 2022", "28 Jul 2022", "13-Jul-22", "14-Jul-22"],
+        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "13-Jul-22", "14-Jul-22"],
       },
       // {
       //   id: 6,
@@ -255,9 +255,9 @@ const Submission = () => {
                     T-BILL
                   </button>
                   <button
-                    onClick={() => handleActiveTAb("Tbill")}
+                    // onClick={() => handleActiveTAb("")}
                     className={`btn btn-primary    ${
-                      activeTab === "annual" ? activeclass : "tabsbtn"
+                      activeTab === "skuk" ? activeclass : "tabsbtn"
                     }  my-2  me-3 sukook `}
                   >
                     SUKUK (Coming Soon)
@@ -265,7 +265,7 @@ const Submission = () => {
                 </div>
                 <div className=" tabs_div">
                   <p className="ms-3 my-3 fw-600 acntp">
-                    <a href="">Click Here</a> Click Here to review last auction
+                    <a href="">Click Here</a> to review last auction
                     results
                   </p>
                   {/* <button
@@ -297,7 +297,7 @@ const Submission = () => {
 
               <table class="table calendarTable table-bordered">
                 <thead class="table_head">
-                  <tr className="calendarT_header">
+                  <tr className="calendarT_header text-center">
                     {activeTable?.headings?.map((data) => {
                       return <th>{data}</th>;
                     })}
@@ -306,11 +306,11 @@ const Submission = () => {
                 </thead>
                 <tbody>
                   {activeTable?.tBody?.map((item) => (
-                    <tr className="second_row">
+                    <tr className="second_row text-center">
                       {item.items?.map((data) => (
-                        <td key={item}>{data}</td>
+                        <td  key={item}>{data}</td>
                       ))}
-                      <td>
+                      <td className="r">
                         <input
                           class="form-check-input"
                           type="checkbox"
