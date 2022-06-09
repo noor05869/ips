@@ -100,20 +100,20 @@ const Submission = () => {
     tBody: [
       {
         id: 1,
-        items: ["PIB", "14 Jun 2022 | 4:00 PM", "18-May-22", "19-May-22"],
+        items: ["PIB", "18-May-22", " 25-May-22", " 26-May-22"],
       },
       {
         id: 2,
-        items: ["PIB", "14 Jun 2022 | 4:00 PM", "4-Jun-22", "2-Jun-22"],
+        items: ["PIB", "15-Jun-22", "22-Jun-22", "23-Jun-22"],
       },
       {
         id: 3,
-        items: ["PIB", "14 Jun 2022 | 4:00 PM", "19-Jun-22", "16-Jun-22"],
+        items: ["PIB", "13-Jul-22", "20-Jul-22", " 21-Jul-22"],
       },
-      {
-        id: 4,
-        items: ["PIB", "14 Jun 2022 | 4:00 PM", "19-Jun-22", "30-Jun-22"],
-      },
+      // {
+      //   id: 4,
+      //   items: ["PIB", "14 Jun 2022 | 4:00 PM", "19-Jun-22", "30-Jun-22"],
+      // },
       // {
       //   id: 5,
       //   items: ["24 Jul 2022","23 Jul 2022","13-Jul-22", "10-Jul-22"],
@@ -170,35 +170,34 @@ const Submission = () => {
   const Tbill = {
     headings: [
       "Instrument",
-      "Bidding Deadline",
       "Auction Date",
       "Settlement Date",
     ],
     tBody: [
       {
         id: 1,
-        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "18-May-22", "19-May-22"],
+        items: ["T-BILL", "18-May-22", "19-May-22"],
       },
       {
         id: 2,
-        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "1-Jun-22", "2-Jun-22"],
+        items: ["T-BILL", "1-Jun-22", "2-Jun-22"],
       },
       {
         id: 3,
-        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "15-Jun-22", "16-Jun-22"],
+        items: ["T-BILL", "15-Jun-22", "16-Jun-22"],
       },
       {
         id: 4,
-        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "29-Jun-22", "30-Jun-22"],
+        items: ["T-BILL", "29-Jun-22", "30-Jun-22"],
       },
       {
         id: 5,
-        items: ["T-BILL", "14 Jun 2022 | 3:00 PM", "13-Jul-22", "14-Jul-22"],
+        items: ["T-BILL", "13-Jul-22", "14-Jul-22"],
       },
-      // {
-      //   id: 6,
-      //   items: ["27-Jul-22", "28-Jul-22"],
-      // },
+      {
+        id: 6,
+        items: ["T-BILL","27-Jul-22", "28-Jul-22"],
+      },
     ],
   };
   useEffect(() => {
@@ -264,7 +263,7 @@ const Submission = () => {
                   </button>
                 </div>
                 <div className=" tabs_div">
-                  <p className="ms-3 my-3 fw-600 acntp">
+                  <p className="ms-1 my-3 fw-600 acntp">
                     <a href="">Click Here</a> to review last auction
                     results
                   </p>
@@ -310,7 +309,7 @@ const Submission = () => {
                       {item.items?.map((data) => (
                         <td  key={item}>{data}</td>
                       ))}
-                      <td className="r">
+                      <td className="">
                         <input
                           class="form-check-input"
                           type="checkbox"
@@ -324,7 +323,7 @@ const Submission = () => {
               </table>
             </div>
             <div className="col-sm-6 col-md-6">
-              <h2 className="my-3">Payment Instructions</h2>
+              <h2 className="my-3">Guidelines</h2>
               <ul className="me-4">
                 <li className="calendar_li my-4 fw-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
