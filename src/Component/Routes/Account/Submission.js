@@ -242,7 +242,7 @@ const Submission = () => {
                       activeTab === "Tbill" ? activeclass : "tabsbtn"
                     }  `}
                   >
-                    T-BLL
+                    T-BILL
                   </button>
                   <button
                     onClick={() => handleActiveTAb("Tbill")}
