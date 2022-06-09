@@ -98,10 +98,10 @@ const Submission = () => {
       "Settlement Date",
     ],
     tBody: [
-      {
-        id: 1,
-        items: ["PIB", "18-May-22", " 25-May-22", " 26-May-22"],
-      },
+      // {
+      //   id: 1,
+      //   items: ["PIB", "18-May-22", " 25-May-22", " 26-May-22"],
+      // },
       {
         id: 2,
         items: ["PIB", "15-Jun-22", "22-Jun-22", "23-Jun-22"],
@@ -174,10 +174,10 @@ const Submission = () => {
       "Settlement Date",
     ],
     tBody: [
-      {
-        id: 1,
-        items: ["T-BILL", "18-May-22", "19-May-22"],
-      },
+      // {
+      //   id: 1,
+      //   items: ["T-BILL", "18-May-22", "19-May-22"],
+      // },
       {
         id: 2,
         items: ["T-BILL", "1-Jun-22", "2-Jun-22"],
