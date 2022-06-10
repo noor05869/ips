@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import NavigationBar from "../../Atoms/NavgationBar";
 import blockImage from "../../../Assets/Img/blockchain.png";
+import timerImage from "../../../Assets/Img/timer.png"
 const AccountReview = () => {
   const [activeTab, setActiveTab] = useState("PIB");
   const [activeTable, setActiveTable] = useState();
@@ -209,15 +210,15 @@ const AccountReview = () => {
         <div className="container-fluid account_main">
           <div className="row  accountdiv">
             <div className="col-lg-6 col-sm-4 col-md-4">
-              <h2>Welcome Mr .John Doe</h2>
-              <p className=" fw-600 acntp">
+              <h2>Welcome Mr .John Doe   <img  src={timerImage} /></h2>
+              <p className=" my-4 fw-600 acntp">
                 Thank You. Your IPS account opening is under review.
                 <br />
                 Our team will get back to you shortly.
               </p>
-              <button className="btn btn-primary accountbtn">
+              {/* <button className="btn btn-primary accountbtn">
                 Open IPS Account
-              </button>
+              </button> */}
             </div>
             <div className="col-6">
               <div className="d-flex justify-content-end">
@@ -349,9 +350,9 @@ const AccountReview = () => {
                 </li>
                 <li className="calendar_li my-4 fw-600">
                   {" "}
-                  Please also note the following: • We will charge a one-time
+                  Please also note the following:<br /> • We will charge a one-time
                   commission of 0.0325% (annualized) on the discounted value of
-                  your security. • Any redemption or profit payments will be
+                  your security.<br /> • Any redemption or profit payments will be
                   sent to us by NCCPL, and we will forward those funds to you.
                 </li>
               </ul>
