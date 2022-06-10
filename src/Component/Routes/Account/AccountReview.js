@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import NavigationBar from "../../Atoms/NavgationBar";
-import socialImage from "../../../Assets/Img/socialmedia1.png";
-const Submission = () => {
+import blockImage from "../../../Assets/Img/blockchain.png";
+const AccountReview = () => {
   const [activeTab, setActiveTab] = useState("PIB");
   const [activeTable, setActiveTable] = useState();
 
@@ -168,11 +168,7 @@ const Submission = () => {
     ],
   };
   const Tbill = {
-    headings: [
-      "Instrument",
-      "Auction Date",
-      "Settlement Date",
-    ],
+    headings: ["Instrument", "Auction Date", "Settlement Date"],
     tBody: [
       // {
       //   id: 1,
@@ -196,7 +192,7 @@ const Submission = () => {
       },
       {
         id: 6,
-        items: ["T-BILL","27-Jul-22", "28-Jul-22"],
+        items: ["T-BILL", "27-Jul-22", "28-Jul-22"],
       },
     ],
   };
@@ -214,14 +210,18 @@ const Submission = () => {
           <div className="row  accountdiv">
             <div className="col-lg-6 col-sm-4 col-md-4">
               <h2>Welcome Mr .John Doe</h2>
-              <p className="acntp">Make your Account</p>
+              <p className=" fw-600 acntp">
+                Thank You. Your IPS account opening is under review.
+                <br />
+                Our team will get back to you shortly.
+              </p>
               <button className="btn btn-primary accountbtn">
-              Open IPS Account
+                Open IPS Account
               </button>
             </div>
             <div className="col-6">
               <div className="d-flex justify-content-end">
-                <img className="imageticks"  src={socialImage}/>
+                <img className="imageticks" src={blockImage} />
                 {/* <p className="acntp">You are almost there</p> */}
                 {/* <div class="progress">
     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width:"70%"}}>
@@ -264,8 +264,7 @@ const Submission = () => {
                 </div>
                 <div className=" tabs_div">
                   <p className="ms-1 my-3 fw-600 acntp">
-                    <a href="">Click Here</a> to review last auction
-                    results
+                    <a href="">Click Here</a> to review last auction results
                   </p>
                   {/* <button
                     onClick={() => handleActiveTAb("annual")}
@@ -307,7 +306,7 @@ const Submission = () => {
                   {activeTable?.tBody?.map((item) => (
                     <tr className="second_row text-center">
                       {item.items?.map((data) => (
-                        <td  key={item}>{data}</td>
+                        <td key={item}>{data}</td>
                       ))}
                       <td className="">
                         <input
@@ -323,40 +322,37 @@ const Submission = () => {
               </table>
             </div>
             <div className="col-sm-6 col-md-6">
-              <h2 className="my-3">Guidelines</h2>
+              <h2 className="my-3">Bidding & Payment Instructions</h2>
               <ul className="me-4">
                 <li className="calendar_li my-4 fw-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  To place a bid in the next auction, please download, print and
+                  fill out the form for non-comeptitive bid or competitive bid,
+                  and email us with a scanned copy at ips@nextcapital.com.pk.
+                  Please only email us with the registered address from which
+                  you created your account.
                 </li>
                 <li className="calendar_li my-4 fw-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et
+                  To fund your bid, prior to the bidding deadline of 3pm, one
+                  day prior to the auction date, you can send us money at the
+                  following bank account:
+                  <br /> Title: Next Capital Limited-Client Group Account <br />
+                  Branch: Stock Exchange Branch Karachi <br />
+                  Acc #: 0550019331003195 <br /> IBAN #:
+                  PK85MUCB0550019331003195
                 </li>
                 <li className="calendar_li my-4 fw-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                  You may send us funds via IBFT, Raast, or Cheque. Cheques must
+                  be received 3 days prior to the bid deadline so that there is
+                  sufficient time for them to clear. If your funds have not
+                  cleared and been received in Next Capital’s bank account, then
+                  we will not submit your bid to NCCPL.
                 </li>
                 <li className="calendar_li my-4 fw-600">
                   {" "}
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et
-                </li>
-                <li className="calendar_li my-4 fw-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et
-                </li>
-                <li className="calendar_li my-4 fw-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et
+                  Please also note the following: • We will charge a one-time
+                  commission of 0.0325% (annualized) on the discounted value of
+                  your security. • Any redemption or profit payments will be
+                  sent to us by NCCPL, and we will forward those funds to you.
                 </li>
               </ul>
             </div>
@@ -367,4 +363,4 @@ const Submission = () => {
   );
 };
 
-export default Submission;
+export default AccountReview;
