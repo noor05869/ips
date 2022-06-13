@@ -12,6 +12,7 @@ import ResetCredentials from "./Routes/Account/ResetCredentials";
 import PasswordReset from "./Routes/Account/PasswordReset";
 import PasswordResetForm from "./Routes/Account/PasswordResetForm";
 import AccountReview from "./Routes/Account/AccountReview";
+import AfterSubmission from "./Routes/Account/AfterSubmission";
 
 
 
@@ -25,6 +26,8 @@ const MainComponent = () => {
             <Route path='/ForgotPass' element={<ForgotPass />} />
             <Route path='/presubmission' element={<Submission />} />
             <Route path='/accountReview' element={<AccountReview />} />
+            <Route path='/afterSubmission' element={<AfterSubmission />} />
+
 
             <Route path='/ResetCredentials' element={<ResetCredentials />} />
             <Route path='/passwordReset' element={<PasswordReset />} />

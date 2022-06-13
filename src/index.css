@@ -867,6 +867,34 @@ input[type="file"] {
     margin-right: 10px;
 }
 
+.after_sub_btn {
+  height: 48px;
+  width: 25%;
+  border-radius: 8px !important;
+}
+.scroll_y {
+  height:350px;
+  overflow-y: scroll;
+}
+.border_top{
+  /* border-top: 1px solid rgba(0,0,0,.125); */
+}
+.accordion-item{
+  border: none !important;
+}
+.accordionBody{
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #DEDEDE !important;
+
+}
+.acoordian{
+  padding: 10px;
+  border-radius: 7px;
+}
+.accordian_item{
+border-radius: 8px;
+}
 .accountbtn {
   width: 100%;
   height: 48px;
@@ -877,6 +905,44 @@ input[type="file"] {
   padding-right: 32px;
 
   margin-bottom: 30px;
+}
+.accordion-button{
+  border: 1px solid #DEDEDE !important;
+  border-radius: 8px !important;
+  height: 40px;
+  color: #6B7280 !important;
+  /* font-weight: 600 !important; */
+}
+#style-1::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	border-radius: 10px;
+  background: #EDEDED;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 9px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background: #D0D0D0;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(32, 111, 235, 0.1) !important;
+color: #0c63e4 !important;
+  border: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  /* background-color: #9fa6b2; */
+  border-color: rgba(0,0,0,.125);
 }
 h2{
     color: #272249 !important;
@@ -1138,7 +1204,7 @@ input[type="number"] {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
   border: 0;
 }
 
