@@ -13,6 +13,7 @@ import PasswordReset from "./Routes/Account/PasswordReset";
 import PasswordResetForm from "./Routes/Account/PasswordResetForm";
 import AccountReview from "./Routes/Account/AccountReview";
 import AfterSubmission from "./Routes/Account/AfterSubmission";
+import AccountUpdate from "./Routes/Account/AccountUpdate";
 
 
 
@@ -27,6 +28,8 @@ const MainComponent = () => {
             <Route path='/presubmission' element={<Submission />} />
             <Route path='/accountReview' element={<AccountReview />} />
             <Route path='/afterSubmission' element={<AfterSubmission />} />
+            <Route path='/accountUpdate' element={<AccountUpdate />} />
+
 
 
             <Route path='/ResetCredentials' element={<ResetCredentials />} />
