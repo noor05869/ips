@@ -209,7 +209,7 @@ const AfterSubmission = () => {
       <div>
         <div className="container-fluid account_main">
           <div className="row  accountdiv">
-            <div className="col-lg-6 col-sm-4 col-md-4">
+            <div className="  col-lg-6 col-sm-4 col-md-4">
               <h2>Welcome Mr .John Doe   <img  src={timerImage} /></h2>
               <p className=" my-4 fw-600 acntp">
               Thank You. Your IPS account has been opened.
@@ -221,7 +221,7 @@ const AfterSubmission = () => {
               Fund Account
               </button>
             </div>
-            <div className="col-6">
+            <div className="col-9">
               <div className="d-flex justify-content-end">
                 <img className="imageticks" src={blockImage} />
                 {/* <p className="acntp">You are almost there</p> */}

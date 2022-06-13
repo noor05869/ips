@@ -212,15 +212,18 @@ const Submission = () => {
       <div>
         <div className="container-fluid account_main">
           <div className="row  accountdiv">
-            <div className="col-lg-6 col-sm-4 col-md-4">
-              <h2>Welcome Mr .John Doe</h2>
-              <p className="acntp">Make your Account</p>
+            <div className=" col-6 col-lg-6 col-sm-4 col-md-4">
+              <h2>Welcome  Mr .John Doe</h2>
+              <p className="acntp">Open your Investor Portfolio  Securities Account (IPS) through National Clearing Company of Pakistan Limited</p>
+              {/* <img className="imageticks"  src={socialImage}/> */}
+
               <button className="btn btn-primary accountbtn">
               Open IPS Account
               </button>
             </div>
             <div className="col-6">
               <div className="d-flex justify-content-end">
+                
                 <img className="imageticks"  src={socialImage}/>
                 {/* <p className="acntp">You are almost there</p> */}
                 {/* <div class="progress">
@@ -230,6 +233,11 @@ const Submission = () => {
   </div>    */}
               </div>
             </div>
+            <p className="acntp_mobile">Open your Investor Portfolio  Securities Account (IPS) through National Clearing Company of Pakistan Limited</p>
+
+            <button className="btn btn-primary my-2 accountbtnMobile">
+              Open IPS Account
+              </button>
           </div>
 
           <div className="row   calendardiv ">
