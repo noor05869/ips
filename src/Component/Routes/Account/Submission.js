@@ -323,7 +323,33 @@ const Submission = () => {
               </table>
             </div>
             <div className="col-sm-6 col-md-6">
-              <h2 className="my-3">Guidelines</h2>
+              <h2 className="my-3">FAQs</h2>
+              <div className=" tabs_div">
+                  <button
+                    // onClick={() => handleActiveTAb("")}
+                    className={`btn btn-primary my-2 ${
+                      activeTab === "" ? activeclass : activeclass
+                    } my-3 me-3 `}
+                  >
+                    General 
+                  </button>
+                  <button
+                    // onClick={() => handleActiveTAb("")}
+                    className={`btn btn-primary  my-2  ${
+                      activeTab === "" ? activeclass : "tabsbtn"
+                    }  me-3 `}
+                  >
+                  IPS Account
+                  </button>
+                  <button
+                    // onClick={() => handleActiveTAb("")}
+                    className={`btn btn-primary    ${
+                      activeTab === "skuk" ? activeclass : "tabsbtn"
+                    }  my-2  me-3 sukook `}
+                  >
+                PSX Trading Account
+                  </button>
+                </div>
               {/* <ul className="me-4">
                 <li className="calendar_li my-4 fw-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
