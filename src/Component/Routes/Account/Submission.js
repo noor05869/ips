@@ -241,7 +241,7 @@ const Submission = () => {
           </div>
 
           <div className="row   calendardiv ">
-            <div className="col-lg-6  col-sm-6 col-md-6">
+            <div className="col-lg-6  col-sm-6 col-md-12">
               <h2 className="my-3">Calendar</h2>
               <div className="calendarTab">
                 <div className=" tabs_div">
@@ -330,7 +330,7 @@ const Submission = () => {
                 </tbody>
               </table>
             </div>
-            <div className="col-sm-6 col-md-6">
+            <div className="col-lg-6 col-sm-12 col-md-12">
               <h2 className="my-3">FAQs</h2>
               <div className=" tabs_div">
                   <button

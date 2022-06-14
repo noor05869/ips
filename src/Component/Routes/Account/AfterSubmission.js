@@ -99,10 +99,7 @@ const AfterSubmission = () => {
       "Settlement Date",
     ],
     tBody: [
-      // {
-      //   id: 1,
-      //   items: ["PIB", "18-May-22", " 25-May-22", " 26-May-22"],
-      // },
+      
       {
         id: 2,
         items: ["PIB", "15-Jun-22", "22-Jun-22", "23-Jun-22"],
@@ -111,41 +108,10 @@ const AfterSubmission = () => {
         id: 3,
         items: ["PIB", "13-Jul-22", "20-Jul-22", " 21-Jul-22"],
       },
-      // {
-      //   id: 4,
-      //   items: ["PIB", "14 Jun 2022 | 4:00 PM", "19-Jun-22", "30-Jun-22"],
-      // },
-      // {
-      //   id: 5,
-      //   items: ["24 Jul 2022","23 Jul 2022","13-Jul-22", "10-Jul-22"],
-      // },
-      // {
-      //   id: 6,
-      //   items: ["27-Jul-22", "28-Jul-22"],
-      // },
+   
     ],
   };
-  // {
-  //   headings: [
-  //     "Start of When-Issue Period ",
-  //     "Auction Date",
-  //     "Settlement Date",
-  //   ],
-  //   tBody: [
-  //     {
-  //       id: 1,
-  //       items: ["18-May-22", " 25-May-22", " 26-May-22"],
-  //     },
-  //     {
-  //       id: 2,
-  //       items: ["15-Jun-22", " 22-Jun-22", " 23-Jun-22"],
-  //     },
-  //     {
-  //       id: 3,
-  //       items: ["13-Jul-22", " 20-Jul-22", " 21-Jul-22"],
-  //     },
-  //   ],
-  // };
+
 
   const annual = {
     headings: [
@@ -171,10 +137,7 @@ const AfterSubmission = () => {
   const Tbill = {
     headings: ["Instrument", "Auction Date", "Settlement Date"],
     tBody: [
-      // {
-      //   id: 1,
-      //   items: ["T-BILL", "18-May-22", "19-May-22"],
-      // },
+ 
       {
         id: 2,
         items: ["T-BILL", "1-Jun-22", "2-Jun-22"],
@@ -224,12 +187,7 @@ const AfterSubmission = () => {
             <div className="col-9">
               <div className="d-flex justify-content-end">
                 <img className="imageticks" src={blockImage} />
-                {/* <p className="acntp">You are almost there</p> */}
-                {/* <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width:"70%"}}>
-      <span class="sr-only"></span>
-    </div>
-  </div>    */}
+           
               </div>
             </div>
           </div>
@@ -268,30 +226,7 @@ const AfterSubmission = () => {
                   <p className="ms-1 my-3 fw-600 acntp">
                     <a href="">Click Here</a> to review last auction results
                   </p>
-                  {/* <button
-                    onClick={() => handleActiveTAb("annual")}
-                    className={`btn btn-primary   ${
-                      activeTab === "annual" ? activeclass : "tabsbtn"
-                    }  my-2  mx-3 `}
-                  >
-                    Annual
-                  </button>
-                  <button
-                    onClick={() => handleActiveTAb("semiAnual")}
-                    className={`btn btn-primary  my-2    ${
-                      activeTab === "semiAnual" ? activeclass : "tabsbtn"
-                    }  `}
-                  >
-                    Semi Annual
-                  </button>
-                  <button
-                    onClick={() => handleActiveTAb("Quaterly")}
-                    className={`btn btn-primary   my-2   ${
-                      activeTab === "Quaterly" ? activeclass : "tabsbtn"
-                    } mx-3 `}
-                  >
-                    Quaterly
-                  </button> */}
+                
                 </div>
               </div>
 
