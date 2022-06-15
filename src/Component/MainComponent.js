@@ -14,7 +14,6 @@ import PasswordResetForm from "./Routes/Account/PasswordResetForm";
 import AccountReview from "./Routes/Account/AccountReview";
 import AfterSubmission from "./Routes/Account/AfterSubmission";
 import AccountUpdate from "./Routes/Account/AccountUpdate";
-import FeedBack from "./Routes/Account/FeedBack";
 
 
 
@@ -30,7 +29,6 @@ const MainComponent = () => {
             <Route path='/accountReview' element={<AccountReview />} />
             <Route path='/afterSubmission' element={<AfterSubmission />} />
             <Route path='/accountUpdate' element={<AccountUpdate />} />
-            <Route path='/feedBack' element={<FeedBack />} />
 
 
 
